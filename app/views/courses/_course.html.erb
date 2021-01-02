@@ -1,9 +1,14 @@
 <div class="card">
   <div class="card-header">
-    <i class="fas fa-book"></i> <%= link_to course.title, course_path(course) %>
+    <i class="fas fa-graduation-cap"></i> <%= link_to course.title, course_path(course) %>
   </div>
   <div class="card-body">
-    <%= course.description %>
+    <small><%= course.short_description %></small>
+  </div>
+  <div class="card-footer">
+    <i class="fas fa-globe-africa"></i> <%= course.language %> |
+    <i class="fas fa-signal"></i> <%= course.level %> |
+    <%= number_to_currency(course.price) %>
   </div>
   <div class="card-footer">
     <i class="fas fa-clock"></i> <%= course.created_at %><br>
