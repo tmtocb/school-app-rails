@@ -3,7 +3,31 @@
     <%= user.email %>
   </div>
   <div class="card-footer">
-    Signed up at:
-    <%= time_ago_in_words(user.created_at) %>
+    <div class="row">
+      Signed up:
+      <%= time_ago_in_words(user.created_at) %> ago
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="row">
+      Sign in count:
+      <%= user.sign_in_count %> 
+    </div>
+    <div class="row">
+      Current sign in at:
+      <%= user.current_sign_in_at %> 
+    </div>
+    <div class="row">
+      Last sign in at:
+      <%= user.last_sign_in_at %> 
+    </div>
+    <div class="row">
+      Current sign in IP:
+      <%= user.current_sign_in_ip %> 
+    </div>
+    <div class="row">
+      Last sign in IP:
+      <%= user.current_sign_in_ip %> 
+    </div>
   </div>
 </div>
