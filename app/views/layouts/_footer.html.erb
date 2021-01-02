@@ -1,0 +1,29 @@
+<hr/>
+<footer class="fixed-bottom">
+  <div class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        Copyright
+        <%= Time.now.year %>
+        School-App
+        <div class="row"></div>
+        <div class="fa fa-envelope"></div>
+        <%= mail_to 'tmtocb@gmail.com' %>
+        <div class="row"></div>
+      </div>
+      <div class="col-md-4">
+        Privacy policy
+        <div class="row"></div>
+        Terms and conditions
+      </div>
+      <div class="col-md-4">
+        About us
+        <div class="row"></div>
+        <%= link_to 'Teach With Us', new_course_path %>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<br/>
