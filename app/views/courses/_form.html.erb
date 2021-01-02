@@ -8,8 +8,8 @@
     <%= f.label :description %>
     <%= f.rich_text_area :description, class: "height-auto" %>
     <%= f.input :short_description %>
-    <%= f.input :language %>
-    <%= f.input :level %>
+    <%= f.input :language, collection: ["English", "Polish", "German"] %>
+    <%= f.input :level, collection: ["Beginner", "Intermediate", "Advanced"] %> %>
     <%= f.input :price %>
   </div>
 
